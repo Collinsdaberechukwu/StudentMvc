@@ -12,8 +12,8 @@ public class StudentImplement implements StudentService {
     public final StudentRepo studentRepo;
     @Override
     public Students getStudentsById(Long id) {
-//       return studentRepo.save(studentRepo.getReferenceById(id));
-       return studentRepo.findById(id).get();
+       return studentRepo.save(studentRepo.getReferenceById(id));
+//       return studentRepo.findById(id).get();
     }
 
 
